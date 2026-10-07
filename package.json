@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "lint": "npx eslint *.js test/*.js",
-    "lintfix": "npx eslint --fix *.js test/*.js",
-    "versions": "npx dependency-version-checker check",
-    "test": "npx mocha"
+    "lint:fix": "npx eslint *.js test --fix",
+    "prettier": "npx prettier . --check",
+    "prettier:fix": "npx prettier . --write --log-level=warn",
+    "test": "node --test test/*.js",
+    "versions": "npx npm-dep-mgr check",
+    "versions:fix": "npx npm-dep-mgr update"
   },
   "repository": {
     "type": "git",
@@ -18,20 +21,20 @@
     "plugin",
     "abusix-feed"
   ],
-  "author": "Sébastien Riccio <sriccio@swisscenter.com>",
+  "author": "S\u00e9bastien Riccio <sriccio@swisscenter.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sriccio/haraka-plugin-abusix-feed/issues"
   },
   "homepage": "https://github.com/sriccio/haraka-plugin-abusix-feed#readme",
   "devDependencies": {
-    "eslint": "^8.55.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-haraka": "*",
-    "eslint-plugin-prettier": "^5.0.1",
-    "haraka-test-fixtures": "*",
-    "mocha": "10",
-    "node-gyp": "^10.0.1",
-    "prettier": "3.1.0"
+    "@haraka/email-address": "^3.1.6",
+    "@haraka/eslint-config": "^3.0.0",
+    "address-rfc2821": "^2.2.1",
+    "haraka-test-fixtures": "^1.7.2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
   }
 }

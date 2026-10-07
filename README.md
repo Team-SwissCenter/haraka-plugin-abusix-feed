@@ -43,9 +43,10 @@ dest=smtp-rttf.abusix.com:12211
 
 # Author and credits
 
-Written by Sébastien Riccio. Some code stolen from the [Abusix Postfix Policy Daemon](https://gitlab.com/abusix-public/abusix_ppd) 
+Written by Sébastien Riccio. Some code stolen from the [Abusix Postfix Policy Daemon](https://gitlab.com/abusix-public/abusix_ppd)
 
 <!-- leave these buried at the bottom of the document -->
+
 [ci-img]: https://github.com/sriccio/haraka-plugin-abusix-feed/actions/workflows/ci.yml/badge.svg
 [ci-url]: https://github.com/sriccio/haraka-plugin-abusix-feed/actions/workflows/ci.yml
 [clim-img]: https://codeclimate.com/github/sriccio/haraka-plugin-abusix-feed/badges/gpa.svg
